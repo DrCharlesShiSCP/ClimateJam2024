@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e2135dd9-cd74-4806-98fc-bd37cd004513" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Kimi's Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Kimi's Test Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starter Assets/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starter Assets/Editor/StarterAssetsDeployMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starter Assets/Editor/StarterAssetsDeployMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starter Assets/Editor/ThirdPersonStarterAssetsDeployMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starter Assets/Editor/ThirdPersonStarterAssetsDeployMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starter Assets/Editor/URPWizard.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starter Assets/Editor/URPWizard/URPWizard.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starter Assets/Editor/URPWizard/URPWizard.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starter Assets/Editor/URPWizard/URPWizard.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starter Assets/Editor/URPWizard/URPWizard.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starter Assets/Editor/Unity.StartAssets.Editor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starter Assets/Editor/Unity.StartAssets.Editor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starter Assets/Sample/Environment/Art/Materials/GreyBlue_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Starter Assets/Sample/Environment/Art/Materials/GreyBlue_Mat.mat" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2iCOwZ5zKrOKgKxlT6ru91vNgCF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2135dd9-cd74-4806-98fc-bd37cd004513" name="Changes" comment="" />
+      <created>1718991343160</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718991343160</updated>
+      <workItem from="1718991526619" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
