@@ -10,8 +10,10 @@ namespace StarterAssets
 		[Header("Character Input Values")]
 		public Vector2 move;
 		public Vector2 look;
+		public Vector2 CameraRotate;
 		public bool jump;
 		public bool sprint;
+		public bool keyboardInputForCameraRotation;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -26,11 +28,11 @@ namespace StarterAssets
 			MoveInput(value.Get<Vector2>());
 		}
 
-		public void OnLook(InputValue value)
+		public void OnCameraRotate(InputValue value)
 		{
-			if(cursorInputForLook)
+			if(keyboardInputForCameraRotation)
 			{
-				LookInput(value.Get<Vector2>());
+				CameraRotateInput(value.Get<Vector2>());
 			}
 		}
 
@@ -51,9 +53,9 @@ namespace StarterAssets
 			move = newMoveDirection;
 		} 
 
-		public void LookInput(Vector2 newLookDirection)
+		public void CameraRotateInput(Vector2 newLookDirection)
 		{
-			look = newLookDirection;
+			CameraRotate = newLookDirection;
 		}
 
 		public void JumpInput(bool newJumpState)

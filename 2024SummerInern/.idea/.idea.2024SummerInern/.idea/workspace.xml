@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2135dd9-cd74-4806-98fc-bd37cd004513" name="Changes" comment="" />
+    <list default="true" id="e2135dd9-cd74-4806-98fc-bd37cd004513" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2024SummerInern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2024SummerInern/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Kimi/Alstra Infinite/Boats LowPoly/Materials/Main PolyPack.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kimi/Alstra Infinite/Boats LowPoly/Materials/Main PolyPack.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Kimi/Alstra Infinite/Boats LowPoly/Materials/Main.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kimi/Alstra Infinite/Boats LowPoly/Materials/Main.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Kimi/Starter Assets/Runtime/InputSystem/StarterAssets.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kimi/Starter Assets/Runtime/InputSystem/StarterAssets.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Kimi/Starter Assets/Runtime/InputSystem/StarterAssetsInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kimi/Starter Assets/Runtime/InputSystem/StarterAssetsInputs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Kimi/Starter Assets/Runtime/Mobile/Scripts/VirtualInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kimi/Starter Assets/Runtime/Mobile/Scripts/VirtualInput.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Kimi/Script/Boat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Runtime/Data/UniversalRenderPipelineAsset.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2iCOwZ5zKrOKgKxlT6ru91vNgCF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,6 +34,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   },
@@ -81,8 +97,12 @@
       <updated>1718991343160</updated>
       <workItem from="1718991526619" duration="4000" />
       <workItem from="1718991751455" duration="13000" />
+      <workItem from="1718992521819" duration="6087000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
