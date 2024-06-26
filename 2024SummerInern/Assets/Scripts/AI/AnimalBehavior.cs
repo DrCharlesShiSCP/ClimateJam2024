@@ -9,7 +9,7 @@ public class AnimalBehavior : MonoBehaviour
     public GameObject[] trashObjects;  // 垃圾对象数组
     public float stuckTime = 5f;       // 卡壳时间
 
-    private GameObject target;         // 当前目标
+    public GameObject target;         // 当前目标
     private NavMeshAgent agent;        // NavMesh代理
     private bool isEating = false;     // 是否正在吃
 
