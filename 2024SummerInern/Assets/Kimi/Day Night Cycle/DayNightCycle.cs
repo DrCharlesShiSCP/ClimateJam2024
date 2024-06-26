@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class DayNightCycle : MonoBehaviour
@@ -74,6 +75,14 @@ public class DayNightCycle : MonoBehaviour
     [SerializeField] private float sunVariation = 1.5f;
     [SerializeField] private Gradient sunColor;
 
+
+    [Header("Seasonal Variables")] 
+    [SerializeField]
+    private Transform sunSeasonalRotation;
+    [SerializeField] 
+    [Range(-45f, 45f)] 
+    private float maxSeasonalTilt;
+
     private void Update()
     {
         if (!pause)
@@ -112,6 +121,9 @@ public class DayNightCycle : MonoBehaviour
     {
         float sunAngle = timeOfDay * 360f;
         dailyRotation.transform.localRotation = Quaternion.Euler(new Vector3(0f,0f,sunAngle));
+
+        float seasonalAngle = -maxSeasonalTilt * Mathf.Cos(dayNumber / _yearLength * 2f * Mathf.PI);
+        sunSeasonalRotation.localRotation = Quaternion.Euler(new Vector3(seasonalAngle, 0f, 0f));
     }
 
     private void SunIntensity()

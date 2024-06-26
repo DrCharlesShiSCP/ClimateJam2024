@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e2135dd9-cd74-4806-98fc-bd37cd004513" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2024SummerInern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2024SummerInern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kimi/Skybox1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kimi/Skybox1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Kimi/Day Night Cycle/DayNightCycle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kimi/Day Night Cycle/DayNightCycle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +101,7 @@
       <workItem from="1718992521819" duration="6087000" />
       <workItem from="1719285243660" duration="4223000" />
       <workItem from="1719376192255" duration="29000" />
+      <workItem from="1719435141131" duration="1440000" />
     </task>
     <servers />
   </component>
