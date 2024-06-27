@@ -4,18 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="e2135dd9-cd74-4806-98fc-bd37cd004513" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2024SummerInern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2024SummerInern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kimi/Alstra Infinite/Boats LowPoly/Materials/Main PolyPack.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kimi/Alstra Infinite/Boats LowPoly/Materials/Main PolyPack.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kimi/Alstra Infinite/Boats LowPoly/Materials/Main.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kimi/Alstra Infinite/Boats LowPoly/Materials/Main.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kimi/Starter Assets/Runtime/InputSystem/StarterAssets.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kimi/Starter Assets/Runtime/InputSystem/StarterAssets.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kimi/Starter Assets/Runtime/InputSystem/StarterAssetsInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kimi/Starter Assets/Runtime/InputSystem/StarterAssetsInputs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kimi/Starter Assets/Runtime/Mobile/Scripts/VirtualInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kimi/Starter Assets/Runtime/Mobile/Scripts/VirtualInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Kimi/Day Night Cycle/DayNightCycle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kimi/Day Night Cycle/DayNightCycle.cs" afterDir="false" />
     </list>
+=======
+    <list default="true" id="e2135dd9-cd74-4806-98fc-bd37cd004513" name="Changes" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Kimi/Script/Boat.cs" root0="FORCE_HIGHLIGHTING" />
@@ -30,28 +33,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Kimi&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+>>>>>>> Stashed changes
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Kimiz\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Kimiz\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Kimiz\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/ziyangk/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/ziyangk/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/ziyangk/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="E:\Unity\2022.3.33f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.33f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath E:\Unity\ClimateJam2024\2024SummerInern -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Unity\ClimateJam2024\2024SummerInern" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -59,7 +78,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="E:\Unity\2022.3.33f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.33f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath E:\Unity\ClimateJam2024\2024SummerInern -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Unity\ClimateJam2024\2024SummerInern" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -98,6 +117,9 @@
       <workItem from="1718991526619" duration="4000" />
       <workItem from="1718991751455" duration="13000" />
       <workItem from="1718992521819" duration="6087000" />
+      <workItem from="1719285243660" duration="4223000" />
+      <workItem from="1719376192255" duration="29000" />
+      <workItem from="1719435141131" duration="1440000" />
     </task>
     <servers />
   </component>
