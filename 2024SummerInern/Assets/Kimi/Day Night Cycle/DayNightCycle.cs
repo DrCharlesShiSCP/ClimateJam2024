@@ -63,6 +63,11 @@ public class DayNightCycle : MonoBehaviour
     }
 
     public bool pause = false; // Pause the day night cycle without pausing the game
+    
+    // Time Curve Variables here
+    [SerializeField] 
+    private AnimationCurve timeCurve;
+    private float timeCurveNormalization;
 
     [Header("Sun Light")] 
     [SerializeField] 
@@ -83,6 +88,11 @@ public class DayNightCycle : MonoBehaviour
     [Range(-45f, 45f)] 
     private float maxSeasonalTilt;
 
+    private void Start()
+    {
+        NormalizeTimeCurve();
+    }
+
     private void Update()
     {
         if (!pause)
@@ -98,6 +108,23 @@ public class DayNightCycle : MonoBehaviour
     {
         // This can change the target day length during runtime
         _timeScale = 24 / (_targetDayLength / 60);
+
+        _timeScale *= timeCurve.Evaluate(timeOfDay); // changes timescale based on time curve
+        _timeScale /= timeCurveNormalization; // keeps day length at target value
+    }
+
+    private void NormalizeTimeCurve()
+    {
+        float stepSize = 0.01f; // Numerical Integration
+        int numberSteps = Mathf.FloorToInt(1f / stepSize);
+        float curveTotal = 0;
+
+        for (int i = 0; i < numberSteps; i++)
+        {
+            curveTotal += timeCurve.Evaluate(i * stepSize);
+        }
+
+        timeCurveNormalization = curveTotal / numberSteps;
     }
 
     private void UpdateTime()

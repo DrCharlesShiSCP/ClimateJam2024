@@ -115,6 +115,48 @@ MonoBehaviour:
   _yearNumber: 0
   _yearLength: 100
   pause: 0
+  timeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -1.2020373
+      outSlope: -1.2020373
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.25
+      value: 0.69949067
+      inSlope: 0.04138882
+      outSlope: 0.04138882
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.08203757
+    - serializedVersion: 3
+      time: 0.75
+      value: 0.7015908
+      inSlope: 0.029704541
+      outSlope: 0.029704541
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.17443633
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1.1936369
+      outSlope: 1.1936369
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   dailyRotation: {fileID: 2593897008400757187}
   sun: {fileID: 2878564615071854768}
   sunBaseIntensity: 1
