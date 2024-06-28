@@ -88,6 +88,9 @@ public class DayNightCycle : MonoBehaviour
     [Range(-45f, 45f)] 
     private float maxSeasonalTilt;
 
+    [Header("Modules")] 
+    private List<DN_ModuleBase> moduleList = new List<DN_ModuleBase>();
+
     private void Start()
     {
         NormalizeTimeCurve();
@@ -102,6 +105,8 @@ public class DayNightCycle : MonoBehaviour
         }
         AdjustSunRotation();
         SunIntensity();
+        AdjustSunColor();
+        UpdateModules(); // Will update modules each frame
     }
 
     private void UpdateTimeScale()
@@ -165,5 +170,23 @@ public class DayNightCycle : MonoBehaviour
         sun.color = sunColor.Evaluate(intensity);
         
     }
-    
+
+    public void AddModule(DN_ModuleBase module)
+    {
+        moduleList.Add(module);
+    }
+
+    public void RemoveModule(DN_ModuleBase module)
+    {
+        moduleList.Remove(module);
+    }
+
+    // Update each module based on current sun intensity
+    private void UpdateModules()
+    {
+        foreach (DN_ModuleBase module in moduleList)
+        {
+            module.UpdateModule(intensity);
+        }
+    }
 }
