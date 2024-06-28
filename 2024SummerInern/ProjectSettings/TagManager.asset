@@ -7,6 +7,7 @@ TagManager:
   - CinemachineTarget
   - Trash
   - Food
+  - DumpLocation
   layers:
   - Default
   - TransparentFX
