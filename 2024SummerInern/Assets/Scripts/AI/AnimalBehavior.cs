@@ -5,70 +5,165 @@ using UnityEngine.AI; // 导航组件
 
 public class AnimalBehavior : MonoBehaviour
 {
-    public GameObject[] foodObjects;   // 食物对象数组
-    public GameObject[] trashObjects;  // 垃圾对象数组
-    public float stuckTime = 5f;       // 卡壳时间
+    public enum AnimalState
+    {
+        SearchingFood,
+        ChasingFood,
+        Eating,
+        Roaming,
+        Dead
+    }
 
-    public GameObject target;         // 当前目标
-    private NavMeshAgent agent;        // NavMesh代理
-    private bool isEating = false;     // 是否正在吃
+    public float eatingDuration = 5.0f; // Eating duration in seconds
+    public float moveSpeed = 5.0f; // Speed of animal movement
+    public float deathTimerDuration = 10.0f; // Death timer duration in seconds
+
+    public AnimalState currentState;
+    public float eatingTimer;
+    public float deathTimer;
+    public GameObject currentTarget;
 
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
-        ChooseTarget();
+        SetState(AnimalState.SearchingFood);
     }
 
     void Update()
     {
-        if (target && !isEating && Vector3.Distance(transform.position, target.transform.position) < 1f)
+        switch (currentState)
         {
-            StartCoroutine(Eat());
+            case AnimalState.SearchingFood:
+                // Implement searching food behavior
+                GameObject[] foodObjects = GameObject.FindGameObjectsWithTag("Food");
+                GameObject[] trashObjects = GameObject.FindGameObjectsWithTag("Trash");
+
+                if (foodObjects.Length >= 0 || trashObjects.Length >= 0)
+                {
+                    GameObject[] possibleTargets = new GameObject[foodObjects.Length + trashObjects.Length];
+                    foodObjects.CopyTo(possibleTargets, 0);
+                    trashObjects.CopyTo(possibleTargets, foodObjects.Length);
+
+                    currentTarget = possibleTargets[Random.Range(0, possibleTargets.Length)];
+
+                    SetState(AnimalState.ChasingFood);
+                }
+                break;
+
+
+
+
+            case AnimalState.ChasingFood:
+                // Implement chasing food behavior
+                if (currentTarget != null)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, currentTarget.transform.position, moveSpeed * Time.deltaTime);
+
+                    if (Vector3.Distance(transform.position, currentTarget.transform.position) < 1.0f)
+                    {
+                        SetState(AnimalState.Eating);
+                    }
+                }
+                if(currentTarget == null)
+                {
+                    SetState(AnimalState.SearchingFood);
+                }
+
+                break;
+
+
+
+
+            case AnimalState.Eating:
+                // Implement eating behavior
+                eatingTimer -= Time.deltaTime;
+                if (eatingTimer <= 0)
+                {
+                    if (currentTarget.CompareTag("Trash"))
+                    {
+                        SetState(AnimalState.Dead);
+                    }
+                    else
+                    {
+                        Destroy(currentTarget);
+                        SetRandomState();
+                    }
+                }
+
+                if (currentTarget == null)
+                {
+                    SetState(AnimalState.SearchingFood);
+                }
+                break;
+
+
+
+
+
+            case AnimalState.Dead:
+                // Implement death behavior
+                deathTimer -= Time.deltaTime;
+                if (deathTimer <= 0)
+                {
+                    Destroy(gameObject); // Destroy the animal object
+                }
+                if(deathTimer >0 )
+                {   
+                    if(currentTarget == null)
+                    {
+                        SetRandomState();
+                    }
+                  
+                }
+                break;
+
+
+
+
+            case AnimalState.Roaming:
+                // Implement roaming behavior
+                if (Random.Range(0, 100) < 5) // 5% chance to switch to SearchingFood state
+                {
+                    SetState(AnimalState.SearchingFood);
+                }
+                break;
         }
     }
 
-    void ChooseTarget()
+    void OnTriggerEnter(Collider other)
     {
-        GameObject[] targetArray = (Random.value > 0.5f) ? foodObjects : trashObjects;
-        float closestDistance = float.MaxValue;
-
-        foreach (GameObject obj in targetArray)
+        // Check if current state is Roaming and collided with food or trash object
+        if (currentState == AnimalState.ChasingFood && (other.CompareTag("Food") || other.CompareTag("Trash")))
         {
-            float distance = Vector3.Distance(transform.position, obj.transform.position);
-            if (distance < closestDistance)
-            {
-                closestDistance = distance;
-                target = obj;
-            }
+            SetState(AnimalState.Eating);
         }
-
-        agent.SetDestination(target.transform.position); // 设置目标位置
     }
 
-    IEnumerator Eat()
+    void SetState(AnimalState newState)
     {
-        isEating = true;
-        float eatTime = (target.tag == "Food") ? 3f : 7f; // 不同的吃的时间
-        yield return new WaitForSeconds(eatTime); // 吃
+        currentState = newState;
 
-        if (target.tag == "Trash")
+        switch (currentState)
         {
-            StartCoroutine(StuckTimer());
+            case AnimalState.SearchingFood:
+                // Initialize searching food state
+                break;
+            case AnimalState.ChasingFood:
+                // Initialize chasing food state
+                break;
+            case AnimalState.Eating:
+                eatingTimer = eatingDuration;
+                break;
+            case AnimalState.Dead:
+                deathTimer = deathTimerDuration;
+                break;
+            case AnimalState.Roaming:
+                // Initialize roaming state
+                break;
         }
-        else
-        {
-            ChooseTarget(); // 寻找新的食物或随机游动
-        }
-
-        Destroy(target); // 销毁食物或垃圾
-        isEating = false;
     }
 
-    IEnumerator StuckTimer()
+    void SetRandomState()
     {
-        yield return new WaitForSeconds(stuckTime);
-
-        Debug.Log("Animal died");
-        Destroy(gameObject); // 动物死亡
+        currentState = (AnimalState)Random.Range(0, 2); // Randomly select between SearchingFood and Roaming
     }
 }

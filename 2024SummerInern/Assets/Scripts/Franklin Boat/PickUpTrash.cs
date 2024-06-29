@@ -7,11 +7,13 @@ using TMPro;
 public class PickUpTrash : MonoBehaviour
 {
     public int maxTrashCapacity = 5;
-    private int currentTrash = 0;
+    public int currentTrash = 0;
+    public int totalDumpedTrash = 0; // 新增：记录一共丢弃了多少垃圾
     public TMP_Text interactionText;
     public TMP_Text trashCountText;
+    public TMP_Text totalDumpedTrashText; // 新增：显示一共丢弃了多少垃圾的TextMesh Pro对象
 
-    private GameObject currentTrashObject;
+    public GameObject currentTrashObject;
     public bool canInteractWithTrash = false;
     public bool canDumpTrash = false;
 
@@ -19,6 +21,7 @@ public class PickUpTrash : MonoBehaviour
     {
         interactionText.gameObject.SetActive(false);
         UpdateTrashCountText();
+        UpdateTotalDumpedTrashText(); // 新增：初始化时更新总丢弃垃圾数量的显示
     }
 
     void Update()
@@ -71,8 +74,8 @@ public class PickUpTrash : MonoBehaviour
         {
             Destroy(currentTrashObject);
             currentTrash++;
-            UpdateTrashCountText();
             canInteractWithTrash = false;
+            UpdateTrashCountText();
             interactionText.gameObject.SetActive(false);
         }
         else
@@ -83,8 +86,10 @@ public class PickUpTrash : MonoBehaviour
 
     private void DumpTrash()
     {
+        totalDumpedTrash += currentTrash; // 新增：更新总丢弃垃圾数量
         currentTrash = 0;
         UpdateTrashCountText();
+        UpdateTotalDumpedTrashText(); // 新增：更新总丢弃垃圾数量的显示
         interactionText.gameObject.SetActive(false);
     }
 
@@ -92,4 +97,11 @@ public class PickUpTrash : MonoBehaviour
     {
         trashCountText.text = "Trash: " + currentTrash + "/" + maxTrashCapacity;
     }
+
+    private void UpdateTotalDumpedTrashText() // 新增：更新总丢弃垃圾数量的显示
+    {
+        totalDumpedTrashText.text = "Total Dumped Trash: " + totalDumpedTrash;
+    }
+
+
 }
