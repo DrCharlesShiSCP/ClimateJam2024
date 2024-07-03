@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DayNightCycle : MonoBehaviour
 {
@@ -17,6 +18,12 @@ public class DayNightCycle : MonoBehaviour
             return _targetDayLength;
         }
     }
+
+    [SerializeField] 
+    private float elapsedTime;
+
+    [SerializeField] 
+    private Text clockText;
 
     [SerializeField] 
     [Range(0f, 1f)] 
@@ -102,6 +109,7 @@ public class DayNightCycle : MonoBehaviour
         {
             UpdateTimeScale();
             UpdateTime();
+            UpdateClock();
         }
         AdjustSunRotation();
         SunIntensity();
@@ -136,8 +144,10 @@ public class DayNightCycle : MonoBehaviour
     {
         // Time of the last frame, second in a day
         _timeOfDay += Time.deltaTime * _timeScale / 86400;
+        elapsedTime = Time.deltaTime;
         if (_timeOfDay > 1) // New day and rest time of day, add to day number
         {
+            elapsedTime = 0;
             _dayNumber++;
             _timeOfDay -= 1;
             if (_dayNumber > _yearLength) // New year
@@ -146,6 +156,15 @@ public class DayNightCycle : MonoBehaviour
                 _dayNumber = 0;
             }
         }
+    }
+
+    private void UpdateClock()
+    {
+        float time = elapsedTime / (targetDayLength * 60); // between 0 and 1
+        float hour = Mathf.FloorToInt(time * 24);
+        float minute = Mathf.FloorToInt((time * 24) - hour) * 60;
+
+        clockText.text = hour.ToString() + " : " + minute.ToString();
     }
 
     // Rotates the sun daily (and seasonally)
