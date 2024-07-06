@@ -126,9 +126,11 @@ MonoBehaviour:
   eatingDuration: 5
   moveSpeed: 5
   deathTimerDuration: 10
+  targetObject: {fileID: 149379266970803777, guid: f3a24df9ba28ef8438ace0485a8c6b6e, type: 3}
   currentState: 0
   eatingTimer: 5
   deathTimer: 5
+  goToTargetTimer: 180
   currentTarget: {fileID: 0}
 --- !u!195 &6524047383255311307
 NavMeshAgent:

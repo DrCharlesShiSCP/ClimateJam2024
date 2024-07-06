@@ -11,21 +11,32 @@ public class AnimalBehavior : MonoBehaviour
         ChasingFood,
         Eating,
         Roaming,
-        Dead
+        Dead,
+
+        GoingToTarget
     }
 
     public float eatingDuration = 5.0f; // Eating duration in seconds
     public float moveSpeed = 5.0f; // Speed of animal movement
     public float deathTimerDuration = 10.0f; // Death timer duration in seconds
 
+    
+    public GameObject targetObject; // Target object to go to
+
+
     public AnimalState currentState;
     public float eatingTimer;
     public float deathTimer;
+    public float goToTargetTimer;// Go to target duration in seconds (5 minutes)
+
+
     public GameObject currentTarget;
 
     void Start()
     {
         SetState(AnimalState.SearchingFood);
+
+        
     }
 
     void Update()
@@ -126,7 +137,25 @@ public class AnimalBehavior : MonoBehaviour
                     SetState(AnimalState.SearchingFood);
                 }
                 break;
+
+
+            case AnimalState.GoingToTarget:
+               
+                    transform.position = Vector3.MoveTowards(transform.position, targetObject.transform.position, moveSpeed * Time.deltaTime);
+                
+                break;
+
         }
+
+        //开始倒计时，判定是否前往目的地
+        goToTargetTimer -= Time.deltaTime;
+        if (goToTargetTimer <= 0)
+        {
+            SetState(AnimalState.GoingToTarget);
+        }
+      
+        
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -136,6 +165,12 @@ public class AnimalBehavior : MonoBehaviour
         {
             SetState(AnimalState.Eating);
         }
+
+          if (currentState == AnimalState.GoingToTarget && other.CompareTag("DeathTarget"))
+        {
+            Destroy(gameObject); // Destroy the animal object when reaching target
+        }
+
     }
 
     void SetState(AnimalState newState)
@@ -159,6 +194,9 @@ public class AnimalBehavior : MonoBehaviour
             case AnimalState.Roaming:
                 // Initialize roaming state
                 break;
+            case AnimalState.GoingToTarget:
+                // Initialize going to target state
+                break;
         }
     }
 
@@ -166,4 +204,7 @@ public class AnimalBehavior : MonoBehaviour
     {
         currentState = (AnimalState)Random.Range(0, 2); // Randomly select between SearchingFood and Roaming
     }
+
+   
+
 }

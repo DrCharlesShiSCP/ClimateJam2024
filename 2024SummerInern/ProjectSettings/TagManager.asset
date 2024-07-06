@@ -8,6 +8,7 @@ TagManager:
   - Trash
   - Food
   - DumpLocation
+  - DeathTarget
   layers:
   - Default
   - TransparentFX
