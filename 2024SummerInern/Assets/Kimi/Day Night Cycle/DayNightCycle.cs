@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,7 +24,10 @@ public class DayNightCycle : MonoBehaviour
     private float elapsedTime;
 
     [SerializeField] 
-    private Text clockText;
+    private bool use24Clock = true;
+
+    [SerializeField] 
+    private TextMeshProUGUI clockText;
 
     [SerializeField] 
     [Range(0f, 1f)] 
@@ -122,7 +126,8 @@ public class DayNightCycle : MonoBehaviour
         // This can change the target day length during runtime
         _timeScale = 24 / (_targetDayLength / 60);
 
-        _timeScale *= timeCurve.Evaluate(timeOfDay); // changes timescale based on time curve
+        _timeScale *= timeCurve.Evaluate(elapsedTime / (targetDayLength * 60)); // changes timescale based on time curve
+        // This will cause time accuracy
         _timeScale /= timeCurveNormalization; // keeps day length at target value
     }
 
@@ -144,7 +149,7 @@ public class DayNightCycle : MonoBehaviour
     {
         // Time of the last frame, second in a day
         _timeOfDay += Time.deltaTime * _timeScale / 86400;
-        elapsedTime = Time.deltaTime;
+        elapsedTime += Time.deltaTime;
         if (_timeOfDay > 1) // New day and rest time of day, add to day number
         {
             elapsedTime = 0;
@@ -161,10 +166,47 @@ public class DayNightCycle : MonoBehaviour
     private void UpdateClock()
     {
         float time = elapsedTime / (targetDayLength * 60); // between 0 and 1
-        float hour = Mathf.FloorToInt(time * 24);
-        float minute = Mathf.FloorToInt((time * 24) - hour) * 60;
+        int hour = Mathf.FloorToInt(time * 24);
+        int minute = Mathf.FloorToInt(((time * 24) - hour) * 60);
 
-        clockText.text = hour.ToString() + " : " + minute.ToString();
+        string hourString;
+        string minuteString;
+
+        if (!use24Clock && hour > 12)
+        {
+            hour -= 12;
+        }
+
+        if (hour < 10)
+        {
+            hourString = "0" + hour.ToString();
+        }
+        else
+        {
+            hourString = hour.ToString();
+        }
+
+        if (minute < 10)
+        {
+            minuteString = "0" + minute.ToString();
+        }
+        else
+        {
+            minuteString = minute.ToString();
+        }
+
+        if (use24Clock)
+        {
+            clockText.text = hourString + " : " + minuteString;
+        }
+        else if (time > 0.5f)
+        {
+            clockText.text = hourString + " : " + minuteString + " P.M.";
+        }
+        else
+        {
+            clockText.text = hourString + " : " + minuteString + " A.M.";
+        }
     }
 
     // Rotates the sun daily (and seasonally)
