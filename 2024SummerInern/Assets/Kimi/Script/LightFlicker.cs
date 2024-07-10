@@ -12,7 +12,7 @@ public class LightFlicker : MonoBehaviour
     [Range(0, 2)]
     public float MinTime;
 
-    [Range(0, 1)] 
+    [Range(0, 2)] 
     public float MaxTime;
 
     public float Timer;
@@ -24,7 +24,7 @@ public class LightFlicker : MonoBehaviour
 
     private void Update()
     {
-        
+        FlickeringLight();
     }
 
     private void FlickeringLight()
