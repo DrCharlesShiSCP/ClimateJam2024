@@ -20,7 +20,7 @@ public class SwitchScene : MonoBehaviour
     {
         
     }
-    void ChangeGameScene()
+    public void ChangeGameScene()
     {
         SceneManager.LoadScene(sceneNumber);
     }
