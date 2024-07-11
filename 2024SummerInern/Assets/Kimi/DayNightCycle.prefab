@@ -113,7 +113,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetDayLength: 0.5
-  _timeOfDay: 0
+  elapsedTime: 6
+  use24Clock: 0
+  clockText: {fileID: 0}
+  _timeOfDay: 0.25
   _dayNumber: 0
   _yearNumber: 0
   _yearLength: 100
