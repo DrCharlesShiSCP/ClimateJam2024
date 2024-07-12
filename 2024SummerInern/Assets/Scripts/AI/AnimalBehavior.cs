@@ -23,7 +23,7 @@ public class AnimalBehavior : MonoBehaviour
     
     public GameObject targetObject; // Target object to go to
 
-
+    [Header("AnimalState")]
     public AnimalState currentState;
     public float eatingTimer;
     public float deathTimer;
@@ -32,11 +32,15 @@ public class AnimalBehavior : MonoBehaviour
 
     public GameObject currentTarget;
 
+    public bool CanSave;
+    public GameObject HelpSign;
+
     void Start()
     {
         SetState(AnimalState.SearchingFood);
+        CanSave = false;
+        HelpSign.SetActive(false);
 
-        
     }
 
     void Update()
@@ -118,9 +122,19 @@ public class AnimalBehavior : MonoBehaviour
                     Destroy(gameObject); // Destroy the animal object
                 }
                 if(deathTimer >0 )
-                {   
-                    if(currentTarget == null)
+                {
+                    HelpSign.SetActive(true);
+
+
+                    if (currentTarget == null)
                     {
+
+                        //if(CanSave == true && Input.GetKeyDown(KeyCode.E))
+                        //{
+
+                        //}
+                        HelpSign.SetActive(false);
+
                         SetRandomState();
                     }
                   
@@ -169,6 +183,10 @@ public class AnimalBehavior : MonoBehaviour
           if (currentState == AnimalState.GoingToTarget && other.CompareTag("DeathTarget"))
         {
             Destroy(gameObject); // Destroy the animal object when reaching target
+        }
+        if (currentState == AnimalState.Dead && (other.CompareTag("Player")))
+        {
+            CanSave = true;
         }
 
     }
