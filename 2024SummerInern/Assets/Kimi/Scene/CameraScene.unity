@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 54fe2f000ad8f424fb63cc3ea0ae2bb2, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -2422,18 +2422,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: WeatherControl
       objectReference: {fileID: 0}
-    - target: {fileID: 8466167809507946375, guid: 3c09757e2185e894597cd795b23e2728, type: 3}
-      propertyPath: ShapeModule.m_Scale.z
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 8466167809507946375, guid: 3c09757e2185e894597cd795b23e2728, type: 3}
-      propertyPath: InitialModule.maxNumParticles
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8466167809507946375, guid: 3c09757e2185e894597cd795b23e2728, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 5000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3315,7 +3303,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5435628878816177410, guid: 700942ef752f0ea42bfb3e2ea0c74752, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7261327312283451781, guid: 700942ef752f0ea42bfb3e2ea0c74752, type: 3}
       propertyPath: m_LocalScale.x
@@ -11040,6 +11028,54 @@ PrefabInstance:
       propertyPath: clockText
       value: 
       objectReference: {fileID: 615675051}
+    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
+      propertyPath: sunColor.ctime2
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
+      propertyPath: sunColor.ctime3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
+      propertyPath: sunColor.key1.b
+      value: 0.19344072
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
+      propertyPath: sunColor.key1.g
+      value: 0.19344072
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
+      propertyPath: sunColor.key1.r
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
+      propertyPath: sunColor.key2.b
+      value: 0.122641504
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
+      propertyPath: sunColor.key2.g
+      value: 0.122641504
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
+      propertyPath: sunColor.key2.r
+      value: 0.122641504
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
+      propertyPath: sunColor.key3.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
+      propertyPath: sunColor.key3.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
+      propertyPath: sunColor.key3.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
+      propertyPath: sunColor.m_NumColorKeys
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
