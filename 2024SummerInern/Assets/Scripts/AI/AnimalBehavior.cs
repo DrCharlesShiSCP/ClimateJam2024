@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI; // µ¼º½×é¼þ
+using TMPro;
 
 public class AnimalBehavior : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class AnimalBehavior : MonoBehaviour
     
     public GameObject targetObject; // Target object to go to
 
-
+    [Header("AnimalState")]
     public AnimalState currentState;
     public float eatingTimer;
     public float deathTimer;
@@ -32,15 +33,26 @@ public class AnimalBehavior : MonoBehaviour
 
     public GameObject currentTarget;
 
+    public bool CanSave;
+    public GameObject HelpSign;
+
+    public PickUpTrash player;
+    
     void Start()
     {
         SetState(AnimalState.SearchingFood);
+        CanSave = false;
+        HelpSign.SetActive(false);
 
-        
+        player = GameObject.FindWithTag("Player").GetComponent<PickUpTrash>();
+
     }
 
     void Update()
     {
+
+        //player.CanSaveFish = CanSave;
+
         switch (currentState)
         {
             case AnimalState.SearchingFood:
@@ -118,9 +130,19 @@ public class AnimalBehavior : MonoBehaviour
                     Destroy(gameObject); // Destroy the animal object
                 }
                 if(deathTimer >0 )
-                {   
-                    if(currentTarget == null)
+                {
+                    HelpSign.SetActive(true);
+
+
+                    if (currentTarget == null)
                     {
+
+                        //if (CanSave == true && Input.GetKeyDown(KeyCode.E))
+                        //{
+                        //    player.SaveAnimalNumber += 1;
+                        //}
+                        HelpSign.SetActive(false);
+                        player.SaveAnimalNumber += 1;
                         SetRandomState();
                     }
                   
@@ -169,6 +191,10 @@ public class AnimalBehavior : MonoBehaviour
           if (currentState == AnimalState.GoingToTarget && other.CompareTag("DeathTarget"))
         {
             Destroy(gameObject); // Destroy the animal object when reaching target
+        }
+        if (currentState == AnimalState.Dead && (other.CompareTag("Player")))
+        {
+            CanSave = true;
         }
 
     }

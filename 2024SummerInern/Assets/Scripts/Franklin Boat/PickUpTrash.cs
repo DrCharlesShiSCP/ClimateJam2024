@@ -13,6 +13,10 @@ public class PickUpTrash : MonoBehaviour
     public TMP_Text trashCountText;
     public TMP_Text totalDumpedTrashText; // 新增：显示一共丢弃了多少垃圾的TextMesh Pro对象
 
+    public int SaveAnimalNumber = 0; //
+    public TMP_Text SaveAnimalText;
+    public bool CanSaveFish;
+
     public GameObject currentTrashObject;
     public bool canInteractWithTrash = false;
     public bool canDumpTrash = false;
@@ -22,6 +26,10 @@ public class PickUpTrash : MonoBehaviour
         interactionText.gameObject.SetActive(false);
         UpdateTrashCountText();
         UpdateTotalDumpedTrashText(); // 新增：初始化时更新总丢弃垃圾数量的显示
+
+
+        CanSaveFish = false;
+        SaveAnimalNumber = 0;
     }
 
     void Update()
@@ -34,6 +42,8 @@ public class PickUpTrash : MonoBehaviour
         {
             DumpTrash();
         }
+
+        SaveAnimalText.text = "Number of animals rescued: " + SaveAnimalNumber;
     }
 
     private void OnTriggerEnter(Collider other)
