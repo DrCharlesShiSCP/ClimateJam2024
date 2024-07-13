@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8780963909593528965}
   - component: {fileID: 5350890463216495406}
   - component: {fileID: 4021103111010392919}
+  - component: {fileID: 3659152691101004441}
   m_Layer: 0
   m_Name: Scout_Boat
   m_TagString: Untagged
@@ -106,6 +107,24 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3811911705681396582, guid: 9b7cc2e501ae9c546b416e06ed63191b, type: 3}
+--- !u!114 &3659152691101004441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761782116372471864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 3
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &2766356530647644126
 GameObject:
   m_ObjectHideFlags: 0
