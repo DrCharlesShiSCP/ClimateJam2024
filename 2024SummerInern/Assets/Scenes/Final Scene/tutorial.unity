@@ -3067,6 +3067,9 @@ MonoBehaviour:
   interactionText: {fileID: 208709607}
   trashCountText: {fileID: 1301153525}
   totalDumpedTrashText: {fileID: 777001135}
+  SaveAnimalNumber: 0
+  SaveAnimalText: {fileID: 0}
+  CanSaveFish: 0
   currentTrashObject: {fileID: 0}
   canInteractWithTrash: 0
   canDumpTrash: 0
