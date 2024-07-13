@@ -564,7 +564,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3084070189002457351, guid: 945397409c5334dc4ac909e7b3fb3a87, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1467926485}
   m_SourcePrefab: {fileID: 100100000, guid: 945397409c5334dc4ac909e7b3fb3a87, type: 3}
 --- !u!1 &43802254
 GameObject:
@@ -11844,6 +11847,107 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cc97616000a3f54c91ef1eccf5f98ac, type: 3}
+--- !u!1 &1467926484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3084070189002457351, guid: 945397409c5334dc4ac909e7b3fb3a87, type: 3}
+  m_PrefabInstance: {fileID: 32525437}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1467926485
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467926484}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e6d21feed4b424849a1cf0a1e81e7b9c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1516913072
 GameObject:
   m_ObjectHideFlags: 0
@@ -12768,54 +12872,6 @@ PrefabInstance:
       propertyPath: clockText
       value: 
       objectReference: {fileID: 1430738747}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.ctime1
-      value: 54266
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.ctime2
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.key1.b
-      value: 0.19344072
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.key1.g
-      value: 0.19344072
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.key1.r
-      value: 0.1981132
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.key2.b
-      value: 0.122641504
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.key2.g
-      value: 0.122641504
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.key2.r
-      value: 0.122641504
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.m_NumColorKeys
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8440487267578432197, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: skyColor.key1.b
-      value: 0.084905684
-      objectReference: {fileID: 0}
-    - target: {fileID: 8440487267578432197, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: skyColor.key1.g
-      value: 0.084905684
-      objectReference: {fileID: 0}
-    - target: {fileID: 8440487267578432197, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: skyColor.key1.r
-      value: 0.084905684
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
