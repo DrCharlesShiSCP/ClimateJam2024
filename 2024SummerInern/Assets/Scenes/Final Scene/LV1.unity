@@ -716,10 +716,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1536595151412968213, guid: 86568eff75a5f784b95e98ab65f94251, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2035761034918436148, guid: 86568eff75a5f784b95e98ab65f94251, type: 3}
       propertyPath: SaveAnimalText
       value: 
@@ -6427,34 +6423,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 316331753021991449, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2722409710717753064, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
-      propertyPath: m_Name
-      value: interact text
-      objectReference: {fileID: 0}
-    - target: {fileID: 2945225402345918395, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 624.4904
-      objectReference: {fileID: 0}
-    - target: {fileID: 2945225402345918395, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50.6035
-      objectReference: {fileID: 0}
-    - target: {fileID: 2945225402345918395, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0000010729
-      objectReference: {fileID: 0}
-    - target: {fileID: 2945225402345918395, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 3.2457
-      objectReference: {fileID: 0}
-    - target: {fileID: 2945225402345918395, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -47.3018
-      objectReference: {fileID: 0}
     - target: {fileID: 3399249795115916952, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
       propertyPath: m_Name
       value: Franklin Boat Camera (1)
@@ -6498,10 +6466,6 @@ PrefabInstance:
     - target: {fileID: 3980728571980147901, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.539
-      objectReference: {fileID: 0}
-    - target: {fileID: 6862979825731164993, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
-      propertyPath: m_margin.z
-      value: 7.8333435
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
