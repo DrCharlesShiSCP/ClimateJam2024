@@ -23,5 +23,6 @@ public class SwitchScene : MonoBehaviour
     public void ChangeGameScene()
     {
         SceneManager.LoadScene(sceneNumber);
+        Time.timeScale = 1f;
     }
 }

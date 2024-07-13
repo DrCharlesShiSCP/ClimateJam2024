@@ -7,7 +7,7 @@ public class QuitTutotrial : MonoBehaviour
     public GameObject tutorialpage;
     void Start()
     {
-        Time.timeScale = 0f;
+        
     }
 
     // Update is called once per frame
