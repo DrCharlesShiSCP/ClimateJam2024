@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI; // µ¼º½×é¼þ
+using TMPro;
 
 public class AnimalBehavior : MonoBehaviour
 {
@@ -35,16 +36,23 @@ public class AnimalBehavior : MonoBehaviour
     public bool CanSave;
     public GameObject HelpSign;
 
+    public PickUpTrash player;
+    
     void Start()
     {
         SetState(AnimalState.SearchingFood);
         CanSave = false;
         HelpSign.SetActive(false);
 
+        player = GameObject.FindWithTag("Player").GetComponent<PickUpTrash>();
+
     }
 
     void Update()
     {
+
+        //player.CanSaveFish = CanSave;
+
         switch (currentState)
         {
             case AnimalState.SearchingFood:
@@ -129,12 +137,12 @@ public class AnimalBehavior : MonoBehaviour
                     if (currentTarget == null)
                     {
 
-                        //if(CanSave == true && Input.GetKeyDown(KeyCode.E))
+                        //if (CanSave == true && Input.GetKeyDown(KeyCode.E))
                         //{
-
+                        //    player.SaveAnimalNumber += 1;
                         //}
                         HelpSign.SetActive(false);
-
+                        player.SaveAnimalNumber += 1;
                         SetRandomState();
                     }
                   
