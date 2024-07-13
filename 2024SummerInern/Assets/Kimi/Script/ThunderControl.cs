@@ -18,12 +18,12 @@ public class ThunderControl : MonoBehaviour
 
     private void Start()
     {
-        PlayThunder = false;
-        PlayRain = false;
-        HasPlayedThunder = false;
-        HasPlayedRain = false;
-        ThunderParticle.Stop();
-        RainParticle.Stop();
+        PlayThunder = true;
+        PlayRain = true;
+        HasPlayedThunder = true;
+        HasPlayedRain = true;
+        ThunderParticle.Play();
+        RainParticle.Play();
     }
 
     void Update()
