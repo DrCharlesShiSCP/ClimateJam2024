@@ -3168,6 +3168,9 @@ MonoBehaviour:
   interactionText: {fileID: 208709607}
   trashCountText: {fileID: 1301153525}
   totalDumpedTrashText: {fileID: 777001135}
+  SaveAnimalNumber: 0
+  SaveAnimalText: {fileID: 0}
+  CanSaveFish: 0
   currentTrashObject: {fileID: 0}
   canInteractWithTrash: 0
   canDumpTrash: 0
@@ -3303,7 +3306,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5435628878816177410, guid: 700942ef752f0ea42bfb3e2ea0c74752, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7261327312283451781, guid: 700942ef752f0ea42bfb3e2ea0c74752, type: 3}
       propertyPath: m_LocalScale.x
@@ -8027,7 +8030,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5435628878816177410, guid: 700942ef752f0ea42bfb3e2ea0c74752, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7261327312283451781, guid: 700942ef752f0ea42bfb3e2ea0c74752, type: 3}
       propertyPath: m_LocalScale.x
@@ -11028,54 +11031,6 @@ PrefabInstance:
       propertyPath: clockText
       value: 
       objectReference: {fileID: 615675051}
-    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
-      propertyPath: sunColor.ctime2
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
-      propertyPath: sunColor.ctime3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
-      propertyPath: sunColor.key1.b
-      value: 0.19344072
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
-      propertyPath: sunColor.key1.g
-      value: 0.19344072
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
-      propertyPath: sunColor.key1.r
-      value: 0.1981132
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
-      propertyPath: sunColor.key2.b
-      value: 0.122641504
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
-      propertyPath: sunColor.key2.g
-      value: 0.122641504
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
-      propertyPath: sunColor.key2.r
-      value: 0.122641504
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
-      propertyPath: sunColor.key3.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
-      propertyPath: sunColor.key3.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
-      propertyPath: sunColor.key3.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 3328c88ea3b9bd546af08464ad783a23, type: 3}
-      propertyPath: sunColor.m_NumColorKeys
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
