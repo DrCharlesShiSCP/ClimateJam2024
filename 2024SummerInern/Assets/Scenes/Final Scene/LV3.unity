@@ -12768,54 +12768,6 @@ PrefabInstance:
       propertyPath: clockText
       value: 
       objectReference: {fileID: 1430738747}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.ctime1
-      value: 54266
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.ctime2
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.key1.b
-      value: 0.19344072
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.key1.g
-      value: 0.19344072
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.key1.r
-      value: 0.1981132
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.key2.b
-      value: 0.122641504
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.key2.g
-      value: 0.122641504
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.key2.r
-      value: 0.122641504
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178474082866397435, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: sunColor.m_NumColorKeys
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8440487267578432197, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: skyColor.key1.b
-      value: 0.084905684
-      objectReference: {fileID: 0}
-    - target: {fileID: 8440487267578432197, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: skyColor.key1.g
-      value: 0.084905684
-      objectReference: {fileID: 0}
-    - target: {fileID: 8440487267578432197, guid: 724186c6f167f4c98a7eea65b7723d2a, type: 3}
-      propertyPath: skyColor.key1.r
-      value: 0.084905684
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
