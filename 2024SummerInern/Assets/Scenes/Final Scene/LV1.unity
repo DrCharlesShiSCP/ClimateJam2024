@@ -1517,17 +1517,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6485208873045182539, guid: 459b91da5556108438bd5429638341f1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6795740483613645841, guid: 459b91da5556108438bd5429638341f1, type: 3}
       propertyPath: m_Name
       value: Fish Test (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6795740483613645841, guid: 459b91da5556108438bd5429638341f1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5317,6 +5309,22 @@ PrefabInstance:
     - target: {fileID: 5741548010454903125, guid: 6bcba4ff33af54e40b45d11c0579796c, type: 3}
       propertyPath: m_Name
       value: Tutorl (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182062019247630721, guid: 6bcba4ff33af54e40b45d11c0579796c, type: 3}
+      propertyPath: m_Size.x
+      value: 4.1945267
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182062019247630721, guid: 6bcba4ff33af54e40b45d11c0579796c, type: 3}
+      propertyPath: m_Size.z
+      value: 4.5420494
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182062019247630721, guid: 6bcba4ff33af54e40b45d11c0579796c, type: 3}
+      propertyPath: m_Center.x
+      value: 0.05471929
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182062019247630721, guid: 6bcba4ff33af54e40b45d11c0579796c, type: 3}
+      propertyPath: m_Center.z
+      value: -0.07389768
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9311,10 +9319,6 @@ PrefabInstance:
     - target: {fileID: 6795740483613645841, guid: 459b91da5556108438bd5429638341f1, type: 3}
       propertyPath: m_Name
       value: Fish Test (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6795740483613645841, guid: 459b91da5556108438bd5429638341f1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

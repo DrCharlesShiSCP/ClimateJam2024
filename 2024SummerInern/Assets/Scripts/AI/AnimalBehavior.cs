@@ -20,8 +20,8 @@ public class AnimalBehavior : MonoBehaviour
     public float eatingDuration = 5.0f; // Eating duration in seconds
     public float moveSpeed = 5.0f; // Speed of animal movement
     public float deathTimerDuration = 10.0f; // Death timer duration in seconds
+    public float detectionRange = 10.0f;
 
-    
     public GameObject targetObject; // Target object to go to
 
     [Header("AnimalState")]
@@ -34,6 +34,7 @@ public class AnimalBehavior : MonoBehaviour
     public GameObject currentTarget;
 
     public bool CanSave;
+    public bool CanEat;
     public GameObject HelpSign;
 
     public PickUpTrash player;
@@ -42,6 +43,7 @@ public class AnimalBehavior : MonoBehaviour
     {
         SetState(AnimalState.SearchingFood);
         CanSave = false;
+        CanEat = false;
         HelpSign.SetActive(false);
 
         player = GameObject.FindWithTag("Player").GetComponent<PickUpTrash>();
@@ -60,14 +62,24 @@ public class AnimalBehavior : MonoBehaviour
                 GameObject[] foodObjects = GameObject.FindGameObjectsWithTag("Food");
                 GameObject[] trashObjects = GameObject.FindGameObjectsWithTag("Trash");
 
-                if (foodObjects.Length >= 0 || trashObjects.Length >= 0)
+                //if (foodObjects.Length >= 0 || trashObjects.Length >= 0)
+                //{
+                //    GameObject[] possibleTargets = new GameObject[foodObjects.Length + trashObjects.Length];
+                //    foodObjects.CopyTo(possibleTargets, 0);
+                //    trashObjects.CopyTo(possibleTargets, foodObjects.Length);
+
+                //    currentTarget = possibleTargets[Random.Range(0, possibleTargets.Length)];
+
+                //    SetState(AnimalState.ChasingFood);
+                //}
+
+
+
+                GameObject nearestTarget = GetNearestTarget(foodObjects, trashObjects);
+
+                if (nearestTarget != null)
                 {
-                    GameObject[] possibleTargets = new GameObject[foodObjects.Length + trashObjects.Length];
-                    foodObjects.CopyTo(possibleTargets, 0);
-                    trashObjects.CopyTo(possibleTargets, foodObjects.Length);
-
-                    currentTarget = possibleTargets[Random.Range(0, possibleTargets.Length)];
-
+                    currentTarget = nearestTarget;
                     SetState(AnimalState.ChasingFood);
                 }
                 break;
@@ -81,9 +93,12 @@ public class AnimalBehavior : MonoBehaviour
                 {
                     transform.position = Vector3.MoveTowards(transform.position, currentTarget.transform.position, moveSpeed * Time.deltaTime);
 
-                    if (Vector3.Distance(transform.position, currentTarget.transform.position) < 1.0f)
-                    {
-                        SetState(AnimalState.Eating);
+                    if (Vector3.Distance(transform.position, currentTarget.transform.position) <= 0f )
+                    {  
+                        
+                            SetState(AnimalState.Eating);
+                        
+                       
                     }
                 }
                 if(currentTarget == null)
@@ -185,10 +200,11 @@ public class AnimalBehavior : MonoBehaviour
         // Check if current state is Roaming and collided with food or trash object
         if (currentState == AnimalState.ChasingFood && (other.CompareTag("Food") || other.CompareTag("Trash")))
         {
+            CanEat = true;
             SetState(AnimalState.Eating);
         }
 
-          if (currentState == AnimalState.GoingToTarget && other.CompareTag("DeathTarget"))
+        if (currentState == AnimalState.GoingToTarget && other.CompareTag("DeathTarget"))
         {
             Destroy(gameObject); // Destroy the animal object when reaching target
         }
@@ -231,6 +247,34 @@ public class AnimalBehavior : MonoBehaviour
         currentState = (AnimalState)Random.Range(0, 2); // Randomly select between SearchingFood and Roaming
     }
 
-   
+    GameObject GetNearestTarget(GameObject[] foodObjects, GameObject[] trashObjects)
+    {
+        GameObject nearestTarget = null;
+        float nearestDistance = Mathf.Infinity;
+        Vector3 currentPosition = transform.position;
+
+        foreach (GameObject food in foodObjects)
+        {
+            float distance = Vector3.Distance(currentPosition, food.transform.position);
+            if (distance < nearestDistance)
+            {
+                nearestTarget = food;
+                nearestDistance = distance;
+            }
+        }
+
+        foreach (GameObject trash in trashObjects)
+        {
+            float distance = Vector3.Distance(currentPosition, trash.transform.position);
+            if (distance < nearestDistance)
+            {
+                nearestTarget = trash;
+                nearestDistance = distance;
+            }
+        }
+
+        return nearestTarget;
+    }
+
 
 }

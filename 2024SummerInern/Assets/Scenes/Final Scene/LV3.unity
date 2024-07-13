@@ -1345,7 +1345,7 @@ Transform:
   m_GameObject: {fileID: 103900074}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 290.9253, y: 0.4, z: -83.20514}
+  m_LocalPosition: {x: 290.9253, y: 5.667599, z: -83.20514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8943,7 +8943,7 @@ Transform:
   m_GameObject: {fileID: 830388137}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 149.92528, y: 0.4, z: -61.20514}
+  m_LocalPosition: {x: 149.92528, y: 4.667599, z: -61.20514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9410,6 +9410,10 @@ PrefabInstance:
     - target: {fileID: 2111993745044292532, guid: 86568eff75a5f784b95e98ab65f94251, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3659152691101004441, guid: 86568eff75a5f784b95e98ab65f94251, type: 3}
+      propertyPath: outlineWidth
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4410950524148100260, guid: 86568eff75a5f784b95e98ab65f94251, type: 3}
       propertyPath: m_Name
@@ -11025,7 +11029,7 @@ Transform:
   m_GameObject: {fileID: 1116927647}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 142.92526, y: 0.4, z: -149.20514}
+  m_LocalPosition: {x: 142.92526, y: 4.667599, z: -149.20514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12266,27 +12270,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1277292746 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8931883525173059148, guid: 55b40b0a00153de4aa8e53856e365096, type: 3}
-  m_PrefabInstance: {fileID: 8994647514541713318}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1277292753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1277292746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37e7d3c4fbf31c340856d1d8880aef0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wobbleSpeedX: 1
-  wobbleAmountX: 5
-  wobbleSpeedZ: 1
-  wobbleAmountZ: 5
 --- !u!1001 &1290045117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14059,7 +14042,7 @@ MonoBehaviour:
   player: {fileID: 0}
   PlayertotalDumpedTrash: 2
   TotalAnimal: 1
-  WinTrashNumber: 2
+  WinTrashNumber: 10
   WinAnimalNumber: 1
   WinImage: {fileID: 685688850}
   SideQuestImage: {fileID: 838812867}
@@ -21697,10 +21680,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8931883525173059148, guid: 55b40b0a00153de4aa8e53856e365096, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1277292753}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55b40b0a00153de4aa8e53856e365096, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
