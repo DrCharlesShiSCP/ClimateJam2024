@@ -9,8 +9,10 @@ public class CameraFollow2 : MonoBehaviour
 
     private Vector3 offset;
 
+
     void Start()
-    {
+    {   
+        target = GameObject.FindWithTag("Player").GetComponent<Transform>();
         if (target == null)
         {
             Debug.LogError("未设置目标船只！");
