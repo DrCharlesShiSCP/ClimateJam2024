@@ -165,7 +165,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   dailyRotation: {fileID: 2593897008400757187}
   sun: {fileID: 2878564615071854768}
-  sunBaseIntensity: 1
+  sunBaseIntensity: 5
   sunVariation: 1.5
   sunColor:
     serializedVersion: 2
@@ -178,7 +178,7 @@ MonoBehaviour:
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 9990
+    ctime1: 54266
     ctime2: 65535
     ctime3: 0
     ctime4: 0
@@ -257,19 +257,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skyColor:
     serializedVersion: 2
-    key0: {r: 0.17661978, g: 0.18665004, b: 0.1981132, a: 1}
-    key1: {r: 0.16740832, g: 0.16860981, b: 0.16981131, a: 1}
-    key2: {r: 0.17176929, g: 0.17928481, b: 0.18867922, a: 0}
-    key3: {r: 0.17532927, g: 0.18126258, b: 0.18867922, a: 0}
-    key4: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 0}
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 1}
+    key2: {r: 0.12090601, g: 0.12177376, b: 0.122641504, a: 0}
+    key3: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 10682
-    ctime2: 14614
-    ctime3: 15025
-    ctime4: 65535
+    ctime1: 23816
+    ctime2: 33087
+    ctime3: 65535
+    ctime4: 0
     ctime5: 0
     ctime6: 0
     ctime7: 0
@@ -283,14 +283,14 @@ MonoBehaviour:
     atime7: 0
     m_Mode: 0
     m_ColorSpace: -1
-    m_NumColorKeys: 5
+    m_NumColorKeys: 4
     m_NumAlphaKeys: 2
   horizonColor:
     serializedVersion: 2
     key0: {r: 0, g: 0, b: 0, a: 1}
-    key1: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+    key1: {r: 0.09433961, g: 0.09389461, b: 0.09389461, a: 1}
     key2: {r: 0.14150941, g: 0.13817193, b: 0.13817193, a: 0}
-    key3: {r: 0.1509434, g: 0.1473834, b: 0.1473834, a: 0}
+    key3: {r: 0.21698111, g: 0.21186364, b: 0.21186364, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
