@@ -873,7 +873,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start New Game
+  m_text: New Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c87186a3aeb1f3742a7bbd2bcc26522d, type: 2}
   m_sharedMaterial: {fileID: -9071912753501982428, guid: c87186a3aeb1f3742a7bbd2bcc26522d, type: 2}
@@ -1550,7 +1550,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Santier
+  m_text: SANITIZER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c87186a3aeb1f3742a7bbd2bcc26522d, type: 2}
   m_sharedMaterial: {fileID: -9071912753501982428, guid: c87186a3aeb1f3742a7bbd2bcc26522d, type: 2}
