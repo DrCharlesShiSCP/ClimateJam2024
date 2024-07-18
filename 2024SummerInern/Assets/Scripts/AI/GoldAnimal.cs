@@ -147,6 +147,7 @@ public class GoldAnimal : MonoBehaviour
                 {   
                     Destroy(gameObject); // Destroy the animal object
                     GameEnd.SetActive(true);
+                    Time.timeScale = 0f;
                 }
                 if (deathTimer > 0)
                 {
