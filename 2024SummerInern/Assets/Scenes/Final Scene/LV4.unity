@@ -3917,7 +3917,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You can only carry few trash\n so Press E to dump Trash at green zone\n"
+  m_text: 'You Can Only Carry So Much Trash
+
+    Press E To Dump Trash At Recycle
+    Area (Green Zone)
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6263,9 +6268,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Press E to pick up Trash
+  m_text: 'Press E To Pick Up Trash
 
-    when you close the trash'
+    When You Are Close To Trash
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10751,7 +10758,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press W,A,S,D to Move
+  m_text: Use W,A,S,D to Move Your Boat
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11500,7 +11507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Time is over!
+  m_text: Time Is Up!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12396,6 +12403,10 @@ PrefabInstance:
     - target: {fileID: 3399249795115916952, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
       propertyPath: m_Name
       value: Franklin Boat Camera (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3461653282334095894, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
+      propertyPath: m_text
+      value: Press E To Pick Up Trash
       objectReference: {fileID: 0}
     - target: {fileID: 3980728571980147901, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
       propertyPath: m_LocalPosition.x
