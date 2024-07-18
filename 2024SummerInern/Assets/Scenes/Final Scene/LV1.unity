@@ -6695,7 +6695,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 364511551984758345, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
-      insertIndex: 0
+      insertIndex: 6
       addedObject: {fileID: 1891604757}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3399249795115916952, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
@@ -7017,7 +7017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2181a0f6420584baee9c2baf17edc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNumber: 5
+  sceneNumber: 4
 --- !u!114 &1649429854
 MonoBehaviour:
   m_ObjectHideFlags: 0
