@@ -7386,7 +7386,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 83f4915fc1cb61c45a574b08eef949c2, type: 2}
     - target: {fileID: 8438425458280511358, guid: 6bcba4ff33af54e40b45d11c0579796c, type: 3}
       propertyPath: moveSpeed
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9043714562660391366, guid: 6bcba4ff33af54e40b45d11c0579796c, type: 3}
       propertyPath: outlineColor.g
