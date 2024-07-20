@@ -181,8 +181,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Level select
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c87186a3aeb1f3742a7bbd2bcc26522d, type: 2}
-  m_sharedMaterial: {fileID: -9071912753501982428, guid: c87186a3aeb1f3742a7bbd2bcc26522d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 279ae4e7f789760458c6bdc719fb1432, type: 2}
+  m_sharedMaterial: {fileID: 3974593621105541107, guid: 279ae4e7f789760458c6bdc719fb1432, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -875,7 +875,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start New Game
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c87186a3aeb1f3742a7bbd2bcc26522d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 279ae4e7f789760458c6bdc719fb1432, type: 2}
   m_sharedMaterial: {fileID: -9071912753501982428, guid: c87186a3aeb1f3742a7bbd2bcc26522d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -939,7 +939,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &709312625
@@ -1630,10 +1630,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Santier
+  m_text: Sanitizer
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c87186a3aeb1f3742a7bbd2bcc26522d, type: 2}
-  m_sharedMaterial: {fileID: -9071912753501982428, guid: c87186a3aeb1f3742a7bbd2bcc26522d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 279ae4e7f789760458c6bdc719fb1432, type: 2}
+  m_sharedMaterial: {fileID: 3974593621105541107, guid: 279ae4e7f789760458c6bdc719fb1432, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1693,7 +1693,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -7.4802246, w: 0}
+  m_margin: {x: -73.417694, y: 0, z: -7.4802246, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
