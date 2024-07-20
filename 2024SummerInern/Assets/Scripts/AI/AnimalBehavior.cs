@@ -38,9 +38,15 @@ public class AnimalBehavior : MonoBehaviour
     public GameObject HelpSign;
 
     public PickUpTrash player;
-    
+
+    [Header("Animation")]
+   public Animator animator;
     void Start()
     {
+
+        animator = GetComponent<Animator>(); // Get the Animator component
+
+
         SetState(AnimalState.SearchingFood);
         CanSave = false;
         CanEat = false;
@@ -190,9 +196,19 @@ public class AnimalBehavior : MonoBehaviour
         {
             SetState(AnimalState.GoingToTarget);
         }
-      
-        
 
+        UpdateAnimator();
+
+    }
+
+    void UpdateAnimator()
+    {
+        // Set the "IsMoving" parameter based on whether the animal is in a moving state
+        bool isMoving = 
+                         currentState == AnimalState.ChasingFood ||
+                         currentState == AnimalState.GoingToTarget;
+
+        animator.SetBool("IsMoving", isMoving);
     }
 
     void OnTriggerEnter(Collider other)
