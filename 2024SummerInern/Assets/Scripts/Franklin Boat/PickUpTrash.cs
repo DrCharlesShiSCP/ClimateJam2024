@@ -21,6 +21,10 @@ public class PickUpTrash : MonoBehaviour
     public bool canInteractWithTrash = false;
     public bool canDumpTrash = false;
 
+    [Header("sound")]
+    public AudioClip pickUpSound; // 修改：拾取垃圾的音效文件
+    public AudioClip dumpSound; // 修改：倒垃圾的音效文件
+    private AudioSource audioSource; // 修改：音频源
     void Start()
     {
         interactionText.gameObject.SetActive(false);
@@ -30,16 +34,31 @@ public class PickUpTrash : MonoBehaviour
 
         CanSaveFish = false;
         SaveAnimalNumber = 0;
+
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
     }
 
     void Update()
     {
         if (canInteractWithTrash && Input.GetKeyDown(KeyCode.E))
         {
+            if (pickUpSound != null)
+            {
+                audioSource.PlayOneShot(pickUpSound); // 播放拾取垃圾的音效
+            }// 播放拾取垃圾的音效
             PickupTrash();
         }
         else if (canDumpTrash && Input.GetKeyDown(KeyCode.E))
         {
+            if (dumpSound != null)
+            {
+                audioSource.PlayOneShot(dumpSound); // 播放倒垃圾的音效
+            }
             DumpTrash();
         }
 

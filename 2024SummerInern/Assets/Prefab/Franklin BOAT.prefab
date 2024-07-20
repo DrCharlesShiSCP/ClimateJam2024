@@ -301,6 +301,8 @@ MonoBehaviour:
   currentTrashObject: {fileID: 0}
   canInteractWithTrash: 0
   canDumpTrash: 0
+  pickUpSound: {fileID: 8300000, guid: 1a68d9509c8865c44909964cf1aa99bb, type: 3}
+  dumpSound: {fileID: 8300000, guid: e2e1532d9d4d2704fb0a0d1c4f25096a, type: 3}
 --- !u!65 &5281574271866692396
 BoxCollider:
   m_ObjectHideFlags: 0
