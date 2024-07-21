@@ -38,5 +38,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final Scene/MB LV4.unity
     guid: 6a61e2742c3a4064cb37da4a70b10006
+  - enabled: 1
+    path: Assets/Scenes/Final Scene/NewsPaper.unity
+    guid: d0a9447ebc8c0f242acb8c6e76cfd43d
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
