@@ -28083,57 +28083,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6832101766917836686, guid: 17a5e9dc7073c0c438dc0171d0b1fda2, type: 3}
   m_PrefabInstance: {fileID: 1667284068}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1670550763
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1670550765}
-  - component: {fileID: 1670550764}
-  m_Layer: 0
-  m_Name: LevelJurdge
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1670550764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670550763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 414e48e7d744fa348a2ec8fb0986c618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  PlayertotalDumpedTrash: 2
-  TotalAnimal: 1
-  WinTrashNumber: 12
-  WinAnimalNumber: 2
-  WinImage: {fileID: 0}
-  SideQuestImage: {fileID: 0}
---- !u!4 &1670550765
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670550763}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.12915, y: 7.6151757, z: 2.1566286}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1679951076 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3461653282334095894, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
@@ -35147,7 +35096,6 @@ SceneRoots:
   - {fileID: 395637596}
   - {fileID: 417450236}
   - {fileID: 1437717376}
-  - {fileID: 1670550765}
   - {fileID: 551425268}
   - {fileID: 7701243770469673698}
   - {fileID: 2139608742}
