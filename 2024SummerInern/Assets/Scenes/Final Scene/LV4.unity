@@ -8436,10 +8436,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Main Quest: Pick trash as more as you can before time end
-
-
-'
+  m_text: 'Main Quest: Pick As Much Trash As Possible Before Time Over'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13774,7 +13771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4955063385014289981, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
       propertyPath: m_text
-      value: 'Main Quest: Pick trash as more as you can before time end
+      value: 'Main Quest: Pick As Much Trash As Possible Before Time Over
 
 
 '

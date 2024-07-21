@@ -27820,7 +27820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4955063385014289981, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
       propertyPath: m_text
-      value: 'Main Quest: Finish tutorial'
+      value: 'Main Quest: Finish Tutorial'
       objectReference: {fileID: 0}
     - target: {fileID: 7711656750970686930, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
       propertyPath: m_CullingMask.m_Bits

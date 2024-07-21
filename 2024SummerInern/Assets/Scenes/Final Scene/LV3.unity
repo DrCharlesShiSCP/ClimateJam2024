@@ -16912,11 +16912,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4955063385014289981, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
       propertyPath: m_text
-      value: 'Main Quest: Pick 10 trashs in storm
+      value: 'Main Quest: Pick 10 Trash In Storm
 
 
-        Side Quest: Save at least
-        1 animal'
+        Side Quest: Save At Least
+        1 Animal'
       objectReference: {fileID: 0}
     - target: {fileID: 4955063385014289981, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
       propertyPath: m_fontSize

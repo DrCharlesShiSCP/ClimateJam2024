@@ -24883,7 +24883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4955063385014289981, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
       propertyPath: m_text
-      value: 'Main Quest: Follow Golden Animal and make sure it survive'
+      value: 'Main Quest: Follow Golden Animal And Make Sure It Survives'
       objectReference: {fileID: 0}
     - target: {fileID: 5700247823539963456, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
       propertyPath: m_AnchorMax.x

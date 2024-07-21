@@ -6806,10 +6806,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4955063385014289981, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
       propertyPath: m_text
-      value: 'Main Quest: Pick 20 trashs
+      value: 'Main Quest: Pick 20 Trashs
 
 
-        Side Quest: Save at least 1 animal'
+        Side Quest: Save at Least 1 Animal'
       objectReference: {fileID: 0}
     - target: {fileID: 4955063385014289981, guid: 4cc35ff94937e8b4499371cd01e3423f, type: 3}
       propertyPath: m_fontSize

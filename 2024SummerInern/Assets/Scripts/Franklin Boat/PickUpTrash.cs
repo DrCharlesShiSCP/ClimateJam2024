@@ -62,7 +62,7 @@ public class PickUpTrash : MonoBehaviour
             DumpTrash();
         }
 
-        SaveAnimalText.text = "Number of animals rescued: " + SaveAnimalNumber;
+        SaveAnimalText.text = "Number of Animals Rescued: " + SaveAnimalNumber;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -71,13 +71,13 @@ public class PickUpTrash : MonoBehaviour
         {
             canInteractWithTrash = true;
             currentTrashObject = other.gameObject;
-            interactionText.text = "Press E to pick up trash";
+            interactionText.text = "Press E to Pick Up Trash";
             interactionText.gameObject.SetActive(true);
         }
         else if (other.CompareTag("DumpLocation"))
         {
             canDumpTrash = true;
-            interactionText.text = "Press E to dump trash";
+            interactionText.text = "Press E to Recycle Trash";
             interactionText.gameObject.SetActive(true);
         }
     }
@@ -109,7 +109,7 @@ public class PickUpTrash : MonoBehaviour
         }
         else
         {
-            interactionText.text = "Trash capacity full! Go to dump location.";
+            interactionText.text = "Trash Capacity Full! Go to Recycle Location.";
         }
     }
 
@@ -129,7 +129,7 @@ public class PickUpTrash : MonoBehaviour
 
     private void UpdateTotalDumpedTrashText() // 新增：更新总丢弃垃圾数量的显示
     {
-        totalDumpedTrashText.text = "Total Dumped Trash: " + totalDumpedTrash;
+        totalDumpedTrashText.text = "Total Recycled Trash: " + totalDumpedTrash;
     }
 
 
