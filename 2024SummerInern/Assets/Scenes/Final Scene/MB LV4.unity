@@ -271,7 +271,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: tourism industry, the government seeks to expand
+  m_Text: the water. Clean up as much as possible.
 --- !u!222 &163962038
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -350,7 +350,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: qualified environmental protection report.
+  m_Text: ' on camera to showcase our people''s quality. '
 --- !u!222 &384106920
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -393,7 +393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -660, y: 4.000023}
+  m_AnchoredPosition: {x: -751, y: 4.000023}
   m_SizeDelta: {x: 176.836, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &389277283
@@ -429,7 +429,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: To better protect its marine environment and
+  m_Text: containing the spread of this hazardous waste in
 --- !u!222 &389277284
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -626,7 +626,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Cleaner, you have a significant responsibility;
+  m_Text: Do well, Sanitizer.
 --- !u!222 &502046902
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -634,85 +634,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502046899}
-  m_CullTransparentMesh: 1
---- !u!1 &529324105
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 529324106}
-  - component: {fileID: 529324108}
-  - component: {fileID: 529324107}
-  m_Layer: 5
-  m_Name: ContentText3 (10)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &529324106
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529324105}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 680738656}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -750, y: -205.99997}
-  m_SizeDelta: {x: 176.836, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &529324107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529324105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
-    m_FontSize: 35
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 100
-    m_Alignment: 3
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: please complete your tasks diligently.
---- !u!222 &529324108
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529324105}
   m_CullTransparentMesh: 1
 --- !u!1 &618368475
 GameObject:
@@ -1045,7 +966,6 @@ RectTransform:
   - {fileID: 909446058}
   - {fileID: 384106918}
   - {fileID: 502046900}
-  - {fileID: 529324106}
   - {fileID: 1321812044}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1124,7 +1044,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: diplomatic leverage, Balotia needs to submit a
+  m_Text: ' document your efforts. Rescue a few animals'
 --- !u!222 &909446060
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1203,7 +1123,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Due to its location at the intersection of
+  m_Text: 'A cargo ship has tilted, causing several '
 --- !u!222 &914667807
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1246,7 +1166,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -750, y: -55.999977}
+  m_AnchoredPosition: {x: -664, y: -55.999977}
   m_SizeDelta: {x: 176.836, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &923995103
@@ -1282,7 +1202,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'its international influence and impact climate '
+  m_Text: 'For potential diplomatic publicity, the '
 --- !u!222 &923995104
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1361,7 +1281,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: collect marine debris. The International
+  m_Text: Balotia's shallow waters. This waste could
 --- !u!222 &1175508858
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1440,7 +1360,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'multiple ocean currents, Balotia''s waters often '
+  m_Text: 'containers filled with harmful waste to fall into '
 --- !u!222 &1318592829
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1486,7 +1406,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 709.8, y: -193}
+  m_AnchoredPosition: {x: 710, y: -190}
   m_SizeDelta: {x: 380.4083, y: 90.7266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1321812045
@@ -1630,7 +1550,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -750, y: 34.000023}
+  m_AnchoredPosition: {x: -669, y: 34.000023}
   m_SizeDelta: {x: 176.836, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1324685396
@@ -1666,7 +1586,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: crucial for island nations like Balotia.
+  m_Text: Sanitizer, the nation needs you to prioritize
 --- !u!222 &1324685397
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1745,7 +1665,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'protection efforts. To provide sufficient '
+  m_Text: 'government has dispatched  media to secretly '
 --- !u!222 &1325585337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1903,7 +1823,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Environmental Protection Law from Stockholm is
+  m_Text: severely impact Balotia's tourism industry.
 --- !u!222 &1637334965
 CanvasRenderer:
   m_ObjectHideFlags: 0
